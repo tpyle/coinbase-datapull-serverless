@@ -4,7 +4,10 @@
   "description": "Pulls data from coinbase's crypto currency price API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -f build.zip",
+    "build": "zip build.zip * -r",
+    "re": "npm run clean && npm run build"
   },
   "author": "Thomas Pyle",
   "license": "GPL-3.0-or-later",
